@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+    <div class="show"> 
+        <h1> Show All Database 2023 </h1>
+            <div class="box">
+            <%  items_now.forEach(data_now=>{  %>                
+                    <div class="card">
+                            <h1> <%= data_now.items %> </h1>
+                            <h1> <%= data_now.price  %> </h1>
+                            <p>  <%= data_now.notes %> </p>
+                            <a href="/part/<%=data_now.id%> "> Read More </a>
+                    </div>
+            <% }) %>
+
+
+            </div>
+
+
+    </div>
+</body>
+</html>
